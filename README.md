@@ -25,7 +25,7 @@ Use the terminal to git add your files and folders to source control, and git co
 
 ```PowerShell
 git add .
-
+git commit -m "Initial commit"
 git push origin main
 ```
 
