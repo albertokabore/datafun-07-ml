@@ -97,7 +97,7 @@ git add .
 Git commit changes.
 
 ```
-git commit -m "after .venv setup"
+git commit -m "initial commit"
 ```
 Git push to GitHub.
 
