@@ -1,5 +1,6 @@
 # datafun-07-ml
-# Starting the New Project
+
+## Starting the New Project
 
 1. In your browser, create a GitHub project repository with a default README.md. Name your repository  datafun-07-ml or datafun-07-applied.
 
@@ -33,7 +34,7 @@ git push origin main
 
 8. Verify your GitHub repository.
 
-# Create and Manage Your Virtual Environment
+## Create and Manage Your Virtual Environment
 
 1. Open Project Folder in VS Code
 
@@ -60,13 +61,15 @@ In the terminal, activate your environment using the command for your operating 
 
 ```
 .venv\Scripts\Activate
+
 .\.venv\Scripts\Activate.ps1
 ```
 
 Verify you see the virtual environment name (.venv) in your terminal prompt.
 
 6. Install Packages into Active Environment (One-Time, As Needed)
-Verify your project virtual environment located in .venv is active. If not, activate it. You should see .venv in your terminal prompt. Use your favorite method to install the necessary packages.
+
+Verify your project virtual environment located in .venv is active. If not, activate it. You should see .venv in your terminal prompt. 
 
 In the terminal, use `py -m pip install` command(s) to install necessary packages into your active project virtual environment.
 
@@ -78,19 +81,11 @@ py -m pip install jupyterlab numpy pandas pyarrow matplotlib seaborn scipy
 In VS Code, edit your README.md file to record your commands, process, and notes.
 
 8. Set VS Code Interpreter
-In VS Code, from the menu, select View. From the dropdown menu, select Command Palette....
 
-Alternatively, you can use the shortcut Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (Mac) to open the Command Palette.
-
-In the Command Palette, start typing Python: Select Interpreter.
-
-When you see Python: Select Interpreter in the list of options, click on it. A list of available Python interpreters will appear.
-
-Locate and select your project's virtual environment, typically named .venv (or similar).
-
-Confirm your selection. VS Code will now use the selected interpreter for your project.
+Set your VS Code Python Interpreter so your installed packages will be available for import.
 
 9. Git Add / Commit / Push to GitHub
+
 Use your terminal to add your files to source control, commit your changes to git, and push them up to GitHub.
 
 Git add any new files.
@@ -111,5 +106,6 @@ git push -u origin main
 ```
 
 10. Verify
+
 Verify your README.md and .gitignore (and optionally, requirements.txt if used) appear correctly in your GitHub repo. Since you added .venv/ to your .gitignore, your .venv folder should NOT appear in GitHub. This is good - it saves space and allows us to track just the progress of our project files.
 
