@@ -1,5 +1,6 @@
 # datafun-07-ml
 
+
 ## Starting the New Project
 
 1. In your browser, create a GitHub project repository with a default README.md. Name your repository  datafun-07-ml or datafun-07-applied.
@@ -106,6 +107,7 @@ git push -u origin main
 ```
 
 10. Part 1 - Chart a Straight Line
+
 Follow instructions from text Intro to Python for Computer Science and Data Science on page 414, Chapter 10.16. Utilize markdown cells to create section headings as you work.
 
 11. Part 2 - Prediction
@@ -305,23 +307,35 @@ line = plt.plot(x, y)
 Part 4 is a discussion of the two different methods use in this project to visualize data and find the linear regression line.
 
 15. Part 5 - Bonus
+
 Part 5 is continued practice of using machine learning, but with multiple linear regression. Follow instructions from text Intro to Python for Computer Science and Data Science on page 624, Chapter 15.5. Utilize markdown cells to create section headings as you work. You will create seven section while working through the data:
 
 Section 1 - Loading Data
+
 Section 2 - Displaying Data
+
 Section 3 - Exploring Data with Pandas
+
 Section 4 - Descriptive Statistics
+
 Section 5 - Visualizing the Features
+
 Section 6 - Splitting the Data for Training and Testing
+
 Section 7 - Training the Model
+
 Section 8 - Testing the Model
+
 Section 9 - Visualizing the Expected vs Predicted Prices
+
 Section 10 - Regression Model Metrics
+
 Section 11 - Choosing the Best Model It may be helpful to outline these headings in markdown cells, with code cells in between.
 
 Save your project and push back to your repository.
 
 Final insight
+
 Conclusion
 
 
