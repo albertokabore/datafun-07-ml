@@ -105,7 +105,47 @@ Git push to GitHub.
 git push -u origin main
 ```
 
-10. Verify
+10. Part 1 - Chart a Straight Line
+Follow instructions from text Intro to Python for Computer Science and Data Science on page 414, Chapter 10.16. Utilize markdown cells to create section headings as you work.
 
-Verify your README.md and .gitignore (and optionally, requirements.txt if used) appear correctly in your GitHub repo. Since you added .venv/ to your .gitignore, your .venv folder should NOT appear in GitHub. This is good - it saves space and allows us to track just the progress of our project files.
+11. Part 2 - Prediction
+Follow instructions from text Intro to Python for Computer Science and Data Science on page 416, Chapter 10.16. Utilize markdown cells to create section headings as you work. You will create seven section while working through the data:
 
+Section 1 - Data Acquisition
+Section 2 - Data Inspection
+Section 3 - Data Cleaning
+Section 4 - Descriptive Statistics
+Section 5 - Build the Model
+Section 6 - Predict
+Section 7 - Visualizations It may be helpful to outline these headings in markdown cells, with code cells in between.
+12. Part 3 - Prediction
+Follow instructions from text Intro to Python for Computer Science and Data Science on page 620, Chapter 15.4. Utilize markdown cells to create section headings as you work. From Part 2, you have already aquired, inspected, cleaned, and ran descriptive statistics on the data. You will do the following with the data in Part 3:
+
+13. Section 1 - Build the Model
+Section 2 - Test the Model
+Section 3 - Predict
+Section 3 - Visualizations It may be helpful to outline these headings in markdown cells, with code cells in between.
+14. Part 4 - Insights
+Part 4 is a discussion of the two different methods use in this project to visualize data and find the linear regression line.
+
+15. Part 5 - Bonus
+Part 5 is continued practice of using machine learning, but with multiple linear regression. Follow instructions from text Intro to Python for Computer Science and Data Science on page 624, Chapter 15.5. Utilize markdown cells to create section headings as you work. You will create seven section while working through the data:
+
+Section 1 - Load Data
+Section 2 - Display Data
+Section 3 - Explore Data with Pandas
+Section 4 - Descriptive Statistics
+Section 5 - Visualize the Features
+Section 6 - Splitting the Data for Training and Testing
+Section 7 - Training the Model
+Section 8 - Testing the Model
+Section 9 - Visualizing the Expected vs Predicted Prices
+Section 10 - Regression Model Metrics
+Section 11 - Choosing the Best Model It may be helpful to outline these headings in markdown cells, with code cells in between.
+Complete Your Project
+Save your project and push back to your repository.
+
+git add .
+git commit -m "final"                         
+git push origin main
+Project Summary
