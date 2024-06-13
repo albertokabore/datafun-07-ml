@@ -111,11 +111,87 @@ Follow instructions from text Intro to Python for Computer Science and Data Scie
 11. Part 2 - Prediction
 Follow instructions from text Intro to Python for Computer Science and Data Science on page 416, Chapter 10.16. Utilize markdown cells to create section headings as you work. You will create seven section while working through the data:
 
+```PowerShell
+#Import Dependencies 
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+from scipy import stats
+import sklearn
+from sklearn import metrics
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import ElasticNet, Lasso, Ridge 
+from sklearn.model_selection import KFold, cross_val_score
+```
+
 Section 1 - Data Acquisition
+
+```
+# Load the dataset into a pandas DataFrame
+nyc = pd.read_csv('ave_hi_nyc_jan_1895-2018.csv')
+```
+
 Section 2 - Data Inspection
+
+```
+# let's view the first 5 rows of the data
+nyc.head()
+# let's view the last 5 rows of the data
+nyc.tail()
+```
 Section 3 - Data Cleaning
+
+```
+# Improve the column names and clean up the date series. 
+nyc.columns = ['Date', 'Temperature', 'Anomaly']
+# Verify transformations
+nyc.head(3)
+#checking column type
+nyc.Date.dtype
+# Lets truncate last two digits
+nyc.Date = nyc.Date.floordiv(100)
+nyc.head(3)
+
+```
+
+
 Section 4 - Descriptive Statistics
+
+```
+## Set the display precision to 2 decimal places. Use 'display.precision' instead of 'precision' as shown in the text.
+pd.set_option('display.precision', 2)
+```
+
+```
+# let's view the statistical summary
+nyc.Temperature.describe()
+```
+
 Section 5 - Build the Model
+
+```
+# Lets use the SciPy stats module linregress function 
+linear_regression = stats.linregress(x=nyc.Date,
+                                     y=nyc.Temperature)
+```
+
+```
+# calculate slope and intercept for the best fit line through the data.
+linear_regression.slope
+```
+
+```
+# calculate intercept for the best fit line through the data.
+linear_regression.intercept
+```
+
+```
+## Lets calculate intercept for the best fit line through the data.
+linear_regression.slope * 2019 + linear_regression.intercept
+``
+
 Section 6 - Predict
 Section 7 - Visualizations It may be helpful to outline these headings in markdown cells, with code cells in between.
 12. Part 3 - Prediction
@@ -146,6 +222,6 @@ Complete Your Project
 Save your project and push back to your repository.
 
 git add .
-git commit -m "final"                         
+git commit -m "final commit"                         
 git push origin main
 Project Summary
